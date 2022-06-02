@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+.material-icons {
+    vertical-align: -5px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    color: black;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo h1 {
+    font-family: 'Poppins', calibri;
+    color: #000000;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: calibri;
+    font-weight: normal;
+    padding: 7px 25px;
+    color: white;
+    border-radius: 5px;
+    background: #000000;
+}
+
+.main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-wrapper {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px;
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    border-radius: 5px;
+    min-height: 50vh;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input {
+    padding: 12px 25px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.form button {
+    padding: 10px 25px;
+    border: 1px solid black;
+    background: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    justify-content: center;
+}
+
+.todo {
+    height: 8vh;
+    background: rgb(231, 231, 231);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 0px;
+}
+
+.todo .text {
+    color: rgb(0, 0, 0);
+}
+
+
+.todo span {
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.banner {
+    height: 15vh;
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
