@@ -44,6 +44,9 @@
     align-items: center;
     border-bottom: 1px solid rgb(224, 224, 224);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: sticky;
+    top: 0;
+    background: white;
 }
 
 .logo h1 {

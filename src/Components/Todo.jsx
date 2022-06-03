@@ -7,8 +7,7 @@ function Todo(props) {
             <span className={props.class}>{props.todo}</span>
         </div>
         <div className="icons">
-            <span className="material-icons">edit</span>
-            <span className="material-icons">delete</span>
+            <span className="material-icons" onClick={props.handleDelete}>delete</span>
         </div>
     </div>);
 }

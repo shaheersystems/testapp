@@ -21,8 +21,10 @@ export default function App() {
     e.preventDefault();
     setTodo(e.target.value);
   }
-  function checkHandle() {
-    setChecked(!checked);
+  function handleDelete(id) {
+    const newTasks = tasks.filter((item) => item.id !== id);
+    setTasks(newTasks);
+    setCount(0);
   }
   return (
     <div className="App">
@@ -34,7 +36,7 @@ export default function App() {
           <Form submitHandle={submitHandle} inputHandle={inputHandle} todo={todo} />
           <div className="content">
             {tasks?.map((item) => {
-              return <Todo todo={item.text} id={item.id} checkHandle={checkHandle} />
+              return <Todo todo={item.text} id={item.id} handleDelete={() => handleDelete(item.id)} />
             })}
           </div>
         </TodoWrapper>
